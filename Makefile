@@ -16,7 +16,7 @@ build:
 # ну во то шо надо прописывать
 install: build
 	sudo mkdir -p $(INSTALL_DIR)  # делает пердосрака
-	sudo cp $(DIST_DIR)/$(EXECUTABLE) $(INSTALL_DIR)/$(EXECUTABLE)
+	sudo cp dist/Xamper /usr/local/bin/Xamper
 	sudo chmod +x $(INSTALL_DIR)/$(EXECUTABLE)
 	@echo "Installed $(EXECUTABLE) to $(INSTALL_DIR)"
 
