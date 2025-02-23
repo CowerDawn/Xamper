@@ -4,7 +4,7 @@ SCRIPT = Xamper.py
 DIST_DIR = dist
 BUILD_DIR = build
 EXECUTABLE = Xamper
-INSTALL_DIR = /usr/local/bin  # Change this to your desired installation directory
+INSTALL_DIR = /usr/local/bin 
 
 # взрыв нахуй
 all: build
@@ -15,9 +15,11 @@ build:
 
 # ну во то шо надо прописывать
 install: build
+	sudo mkdir -p $(INSTALL_DIR)  # делает пердосрака
 	sudo cp $(DIST_DIR)/$(EXECUTABLE) $(INSTALL_DIR)/$(EXECUTABLE)
 	sudo chmod +x $(INSTALL_DIR)/$(EXECUTABLE)
 	@echo "Installed $(EXECUTABLE) to $(INSTALL_DIR)"
+
 
 # эт нельзя прописывать
 clean:
