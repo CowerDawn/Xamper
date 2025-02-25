@@ -1,4 +1,4 @@
-# osnovnoi fail
+# osnovnoi fayl
 import sys
 import psutil
 from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QPushButton, QMenu
